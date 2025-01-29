@@ -1,0 +1,17 @@
+config-version: 2
+name: snowplow_lastminute_deals
+packages:
+- package: snowplow/unified
+  version: 0.1.0
+profile: default
+vars:
+  snowplow__app_ids:
+  - lastminute_web
+  - lastminute_ios
+  - lastminute_android
+  snowplow__enable_mobile: true
+  snowplow__enable_web: true
+  snowplow__lookback_window_hours: 3
+  snowplow__max_session_days: 10
+  snowplow__start_date: '2024-01-01'
+version: 1.0.0

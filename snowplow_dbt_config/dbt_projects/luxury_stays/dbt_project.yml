@@ -1,0 +1,15 @@
+config-version: 2
+name: snowplow_luxury_stays
+packages:
+- package: snowplow/unified
+  version: 0.1.0
+profile: default
+vars:
+  snowplow__app_ids:
+  - luxury_web
+  snowplow__enable_mobile: false
+  snowplow__enable_web: true
+  snowplow__lookback_window_hours: 3
+  snowplow__max_session_days: 10
+  snowplow__start_date: '2023-06-01'
+version: 1.0.0
